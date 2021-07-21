@@ -1,0 +1,208 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+  box-sizing:border-box;
+}
+body {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+h2 {
+  font-size: 64px;
+  line-height: 84px;
+}
+.wrap {
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png) center center;
+  background-size: cover;
+  height: 958px;
+}
+.header {
+  width: 304px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  padding: 308px 0;
+}
+.header span {
+  font-size: 24px;
+}
+.header h1 {
+  font-size: 80px;
+  line-height: 106px;
+}
+.header img {
+  display: block;
+}
+.header img:hover {
+  transform:scale(1.2,1.2);
+}
+.header ul {
+  display: flex;
+  justify-content: space-between;
+}
+.main {
+  width: 412px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 56px 0;
+}
+.main h3,ul {
+  line-height: 42px;
+}
+.main ul {
+  border-top: 1px solid #000;
+}
+.main ul li {
+  display: flex;
+  margin-top: 28px;
+  justify-content: center;
+  align-items: center;
+}
+.main img {
+  margin-bottom: 20px;
+}
+.main p {
+  margin-bottom: 24px;
+}
+.red-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  display: inline-block;
+  background: #891818;
+  margin-right: 16px;
+}
+.content {
+  background: #000000;
+  border: 1px solid #707070;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 56px 0 160px 0;
+}
+.content h2 {
+  margin-bottom: 12px;
+}
+.content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+.content ul li img {
+  display: block;
+}
+.work-content {
+  text-align: center;
+  padding: 56px 0 96px 0;
+}
+.work-content img {
+  display: block;
+  margin-bottom: 16px;
+}
+.work-content ul {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.work-content h3 {
+  font-size: 20px;
+  line-height: 42px;
+  margin-bottom: 48px;
+}
+.footer {
+  background: #000000;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 64px 0;
+}
+
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-4 {
+  margin-bottom: 4px;
+}
+.mb-8 {
+  margin-bottom: 8px;
+}
+.mb-92 {
+  margin-bottom: 92px;
+}
+.mb-16 {
+  margin-bottom: 16px;
+}
+.mb-56 {
+  margin-bottom: 56px;
+}
+.ml-12 {
+  margin-left: 12px;
+}
+.mr-12 {
+  margin-right: 12px;
+}
+.mb-68 {
+  margin-bottom: 68px;
+}
+.text1 {
+  line-height: 42px;
+}
+.text2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
