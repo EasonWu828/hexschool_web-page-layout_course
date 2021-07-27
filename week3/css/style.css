@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*::before,*::after{
+  box-sizing:border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+h2, h3, h4 {
+  font-weight: bold;
+}
+
+body {
+  line-height: 1.5;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.header {
+  background: #AA0601;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 88px;
+}
+.header h1 {
+  margin: 30px 0;
+}
+.header h1 a {
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png) center;
+  background-size: cover;
+  width: 80px;
+  height: 48px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.header ul {
+  display: flex;
+}
+.header ul li {
+  margin-left: 64px;
+}
+.header ul li a {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+@media (max-width:992px) {
+  .header {
+    padding: 0 39px;
+  }
+  .header ul li {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width:767px) {
+  .header {
+    flex-direction: column;
+    padding: 0;
+  }
+  .header h1 a {
+    background: url(../img/logo-sm.png) no-repeat;
+    width: 48px;
+    height: 30px;
+  }
+  .header h1 {
+    margin: 10px 0;
+  }
+  .header ul {
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .header ul li {
+    width: 50%;
+    margin: 0;
+    border-top: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+  }
+}
+
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 96px 0 160px 0;
+}
+.content h2 {
+  font-size: 48px;
+  line-height: 80px;
+  border-left: 8px solid #9F1213;
+}
+.content h3 {
+  font-size: 32px;
+  line-height: 63px;
+}
+.content h4 {
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 16px;
+}
+.content p {
+  padding-left: 95px;
+  margin-bottom: 32px;
+}
+@media (max-width:992px) {
+  .content {
+    padding: 60px 39px 96px 39px;
+  }
+  .content h3 {
+    margin-bottom: 32px;
+  }
+  .content p {
+    margin-bottom: 24px;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width:767px) {
+  .content {
+    padding: 28px 15px 56px 15px;
+  }
+  .content h2 {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+  .content h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+  .content h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  .content p {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+
+.footer {
+  background: #AA0601;
+}
+.footer-items {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  color: #FFFFFF;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px 0 40px 0;
+}
+.footer-items ul {
+  display: flex;
+}
+.footer-items a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+}
+.footer-items-link {
+  align-items: center;
+}
+.footer-items-link li {
+  margin-right: 48px;
+}
+.footer-items-icons {
+  justify-content: flex-end;
+}
+.footer-items-icons li {
+  margin-left: 32px;
+}
+.footer-items-contact {
+  width: 100%;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #FFFFFF;
+  padding-top: 24px;
+}
+.footer-items-contact li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.footer-items-contact li a {
+  font-size: 36px;
+}
+.footer-items-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-items-text li {
+  font-size: 14px;
+}
+
+@media (max-width:992px) {
+    .footer-items {
+    padding: 32px 39px;
+  }
+  .footer-items-link li{
+    margin-right: 40px;
+  }
+  .footer-items-icons li {
+    margin-left: 24px;
+  }
+  .footer-items-icons  img{
+    width: 24px;
+    height: 24px;
+  }
+  .footer-items-contact li a {
+    font-size: 20px;
+  }
+  .footer-items-contact li img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width:767px) {
+  .footer-items {
+    padding: 25px 15px;
+  }
+  .footer .footer-items-link {
+    display: none;
+  }
+  .footer-items-icons {
+    position: absolute;
+    right: 15px;
+  }
+  .footer-items .footer-items-contact {
+    padding: 0;
+    margin-bottom: 16px;
+  }
+  .footer-items-contact li a {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .footer-items-contact img {
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+  }
+  .footer-items-text {
+    flex-wrap: wrap;
+  }
+  .footer-items-text ul {
+    flex-direction: column;
+  }
+  .footer-items-text ul li {
+    margin-bottom: 8px;
+  }
+  .footer-items-text p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mb-36 {
+  margin-bottom: 36px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mr-22 {
+  margin-right: 22px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-48 {
+  margin-right: 48px;
+}  
